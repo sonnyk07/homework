@@ -1,13 +1,13 @@
 <?php
 $menu = [
-    ['Home'=> "Http://homewrok/home.php"],
-    ['Services' => 'Http://homewrok/services.php'],
-    ['Projects' => 'Http://homewrok/projects.php'],
-    ['Contacts' => 'Http://homewrok/contacts.php',
-        'contactsMenu'=>
-            ['Phone'=> ['mobile'=>'079987389', 'stationare'=>'022-56632-566'],
-                'Fax'=>'022-56632-566',
-                'Email'=>'mySite']
+    ['title' => 'Home'['link' => 'Http://homewrok/home.php']],
+    ['title' => 'Services'['link' =>'Http://homewrok/services.php']],
+    ['title' => 'Projects'['link' => 'Http://homewrok/projects.php']],
+    ['title' => 'Contacts'['link' => 'Http://homewrok/contacts.php',
+            'childTitle' => 'Phone' ['mobile'=>'079987389', 
+                            'stationare'=>'022-56632-566'],
+                'childTitle' => 'Fax'=>'022-56632-566',
+               'childTitle' => 'Email'=>'mySite']
     ],
 ];
 var_dump($menu);
