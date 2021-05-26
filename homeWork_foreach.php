@@ -1,13 +1,24 @@
 <?php
 $menu = [
-    '<ul>'=>'<a href="home.php"><li>Home</li></a>',
-    '<a href="services.php">'=>'<li>Services</li></a>',
-    '<a href="projects.php">'=>'<li>Projects</li></a>',
-    '<a href="contcats.php">'=>'<ul><li>Contacts</li></a>',
-    '<a href="phone.php">'=>'<li>Phone</li></a>',
-    '<a href="fax.php">'=>'<li>FAX</li></a></ul></ul>'
-    ];
+    'title1' => 'Home','link1' => 'Http://homewrok/home.php',
+    'title2' => 'Services','link2' =>'Http://homewrok/projects.php',
+    'title3' => 'Projects','link3' => 'Http://homewrok/projects.php',
+    'title4' => 'Contacts','link4' => 'Http://homewrok/contacts.php',
+    'title5' =>  ['mobile' => '079987389',
+    'stationare'=>'022-56632-566'],
+];
 
-foreach ($menu as $key => $value){
+<<<HTML
+
+$htmlMenu = "<ul>
+<li><a href="$menu['link1']">$menu['title1']</a></li>
+<li><a href="$menu['link2']">$menu['title2']</a></li>
+<li><a href="$menu['link3']">$menu['title3']</a></li>
+<li><a href="$menu['link4']">$menu['title4']</a></li>
+</ul>";
+
+>>>HTML
+
+foreach ($htmlMenu as $key => $value){
     echo "$key : $value";
-    };
+        };
